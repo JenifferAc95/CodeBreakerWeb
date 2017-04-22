@@ -19,7 +19,7 @@ func main() {
 	router.GET("/codebreaker/setup/:number", func(c *gin.Context) {
 		number := c.Param("number")
 		setCode(number)
-		c.String(http.StatusOK, "Secret number configured: " + number)
+		c.String(http.StatusOK, "Secret number configured Jeniffer Ac: " + number)
 	})
 
 	router.GET("/codebreaker/guess/:number", func(c *gin.Context) {
